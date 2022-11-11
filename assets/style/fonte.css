@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('./fonte.css');
+    src: url('./fonte.css?#iefix') format('embedded-opentype'),
+        url('./fonte.cssLibreFranklin-Thin.woff2') format('woff2'),
+        url('./fonte.cssLibreFranklin-Thin.woff') format('woff'),
+        url('./fonte.cssLibreFranklin-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('./fonte.cssTenorSans.eot');
+    src: url('./fonte.cssTenorSans.eot?#iefix') format('embedded-opentype'),
+        url('./fonte.cssTenorSans.woff2') format('woff2'),
+        url('./fonte.cssTenorSans.woff') format('woff'),
+        url('./fonte.cssTenorSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('./fonte.cssSourceSerifPro-Regular.eot');
+    src: url('./fonte.cssSourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonte.cssSourceSerifPro-Regular.woff2') format('woff2'),
+        url('./fonte.cssSourceSerifPro-Regular.woff') format('woff'),
+        url('./fonte.cssSourceSerifPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

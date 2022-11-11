@@ -1,6 +1,12 @@
 @import "./fonts.css";
 
 :root {
+    --light: #fff;
+    --dark: rgb(12, 7, 7);
+    --success: rgb(4, 126, 4);
+    --warn: rgb(230, 184, 36);
+    --danger: rgb(245, 29, 29);
+    --primary: rgb(20, 20, 247);
     --webinar-color: #DFAD63;
     --join_chat-color: #8BB47D;
     --privite_massage-color: #5982C0;
@@ -15,7 +21,10 @@
 }
 
 body {
-    font-family: "", Arial, Helvetica, sans-serif;
+    font-family: "Libre Franklin""Tenor San""Source Serif Pro",
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
 a {
@@ -27,6 +36,7 @@ button {
     background: none;
     border: none;
 }
+
 ul,
 ol,
 li {
@@ -35,34 +45,42 @@ li {
 
 /* BASE CONFIG */
 
-.section {
-    background: ;
-}
+
 
 .container {
-    max-width: 1200px;
+    max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-.row {
-    display: flex;
-}
 
-.col-4 {
-    width: 33.33333%;
-}
+
+
 
 /* HEADER */
 
-.header {}
+.header {
+    height: 90px;
+    padding: 33px 140px 33px 120px;
+}
+
 
 .header__container {
     display: flex;
     height: 100%;
-    max-width: 1386px;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__nav a {
+    margin-left: 40px;
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .header__burger {
@@ -93,42 +111,137 @@ li {
 
 /* MAIN SECTION */
 .main {
-    padding-top: 110px;
-    background-color: #E5E5E5 center/cover;
+    display: grid;
+    padding-top: 59px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 51px;
+    padding-bottom: 60px;
 }
 
-.main__container {
-    max-width: 1043px;
-    padding: 0 20px;
-    margin: 0 auto;
+.main__name {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
 }
 
-.main__container img {
+.main__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 18px;
+}
+
+.main__discr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    margin-top: 27px;
+}
+
+.main__by {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 28px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 90px;
+        column-gap: 19px;
+    row-gap: 74px;
+}
+
+.gallary__container {
+    max-width: 386px;
+}
+.gallary__discr{
+    margin-top: 24px;    
+}
+
+.gallary__name {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-bottom: 18px;
+}
+
+.gallary__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.gallary__by {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.line::before{
+    content: "";
+    border: 1px gray ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-
-
-.card__name {
-    position: absolute;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-top: 26px;
-    margin-left: 42px;
-}
-
 .gallery__cards-top {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 28px;
-    row-gap: 28px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 19px;
+    row-gap: 74px;
 }
 
 .gallery__cards-buttom {
@@ -160,39 +273,4 @@ li {
 
 .card__accessories {
     grid-area: card4;
-}
-
-/* FOOTER */
-.footer {
-    background: #E7E9ED;
-    padding: 66px;
-    /* height: 100vh; */
-
-}
-
-
-.footer__discr {
-    text-align: center;
-    align-content: center;
-    margin: auto;
-}
-
-
-.footer__title {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.footer__fone {
-    margin-top: 19px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #000000;
 }
